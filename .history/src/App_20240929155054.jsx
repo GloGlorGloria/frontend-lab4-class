@@ -54,15 +54,11 @@ function Tile(props){
   function handleDelete(e){
     // const element = e.target;
 
-    if ( e.target === e.currentTarget){
+    if(e,target === e.currentTarget){
       //you clicked on the tile itself, don't do anything
       return;
     }
-
-    if(e.target.tagName !== `SPAN`){
-      return;
-    }
-    e.currentTarget.remove();  //otherwise, remove the tile 
+    e.currentTarget.remove(); 
     // tile.remove();
     // console.log('Delte button clicked');
   }

@@ -51,22 +51,10 @@ function Tile(props){
   const background = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
   
 
-  function handleDelete(e){
-    // const element = e.target;
-
-    if ( e.target === e.currentTarget){
-      //you clicked on the tile itself, don't do anything
-      return;
-    }
-
-    if(e.target.tagName !== `SPAN`){
-      return;
-    }
-    e.currentTarget.remove();  //otherwise, remove the tile 
-    // tile.remove();
-    // console.log('Delte button clicked');
+  function handleDelete(){
+    console.log('Delte button clicked');
   }
-
+  
   return (
     <div className="tile" style={{ backgroundColor: background }} onClick={handleDelete}>
       <p>{props.name}</p>

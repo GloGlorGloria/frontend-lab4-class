@@ -26,17 +26,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
-    position: relative;
-
-    span{
-        display: inline-block;
-        padding: 0 0.5em;
-        background: #eee;
-        position: absolute;
-        top: 0;
-        right: 0;
-        cursor: pointer;
-    }
 }
-

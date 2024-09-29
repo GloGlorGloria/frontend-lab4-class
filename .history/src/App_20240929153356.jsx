@@ -29,49 +29,16 @@ function App() {
     </div>
 
     <div className="container">
-      <Tile name="tile 1"/>
-      <Tile name="tile 2"/>
-      <Tile name="tile 3"/>
-      <Tile name="tile 4"/>
-      <Tile name="tile 5"/>
-      <Tile name="tile 6"/>
-      {/* <div className="tile"><p>Tile 1</p></div>
+      <div className="tile"><p>Tile 1</p></div>
       <div className ="tile"><p>Tile 2</p></div>
       <div className="tile"><p>Tile 3</p></div>
       <div className="tile"><p>Tile 4</p></div>
       <div className="tile"><p>Tile 5</p></div>
-      <div className="tile"><p>Tile 6</p></div> */}
+      <div className="tile"><p>Tile 6</p></div>
     </div>
     </>
     
   );
 }
 
-function Tile(props){
-  const background = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-  
-
-  function handleDelete(e){
-    // const element = e.target;
-
-    if ( e.target === e.currentTarget){
-      //you clicked on the tile itself, don't do anything
-      return;
-    }
-
-    if(e.target.tagName !== `SPAN`){
-      return;
-    }
-    e.currentTarget.remove();  //otherwise, remove the tile 
-    // tile.remove();
-    // console.log('Delte button clicked');
-  }
-
-  return (
-    <div className="tile" style={{ backgroundColor: background }} onClick={handleDelete}>
-      <p>{props.name}</p>
-      <span>x</span>
-    </div>
-  );
-}
 export default App;

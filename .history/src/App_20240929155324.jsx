@@ -58,10 +58,6 @@ function Tile(props){
       //you clicked on the tile itself, don't do anything
       return;
     }
-
-    if(e.target.tagName !== `SPAN`){
-      return;
-    }
     e.currentTarget.remove();  //otherwise, remove the tile 
     // tile.remove();
     // console.log('Delte button clicked');
