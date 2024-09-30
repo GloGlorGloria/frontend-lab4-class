@@ -6,8 +6,6 @@ function App(){
     <>
     <div className="App">
       <h1>Simple text editor</h1>
-      <Editor/>
-      <Output/>
     </div>
     </>
   );
